@@ -2,8 +2,28 @@
 Marlin Creality Ender3 v1 BLTouch for mother board v1.1.4
 
 
-> Marlin 2.0.9.8
-> Marlin Configurations 2.0.9.8
+- Marlin 2.0.9.8
+- Marlin Configurations 2.0.9.8
+
+
+## Process installation and firmware build
+
+```bash
+# Clone Marlin
+git clone git@github.com:MarlinFirmware/Marlin.git
+cd Marlin
+git checkout 2.0.9.8
+cd ..
+
+# Clone Marlin Configurations
+git clone git@github.com:MarlinFirmware/Configurations.git
+cd Configurations
+git checkout 2.0.9.8
+cd ..
+
+# Copy ender 3 v1 default configuration in Marlin project
+cp Configurations/config/examples/Creality/Ender-3/CrealityV1/* Marlin/Marlin/
+```
 
 
 ## Adding BL Touch
