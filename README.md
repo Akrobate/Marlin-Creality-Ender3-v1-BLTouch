@@ -67,3 +67,19 @@ Configuration.h
 ```
 #define Y_MIN_POS -8
 ```
+
+## Compile the code
+
+### Required
+
+* VSCode
+* Platformio extention
+* Auto Build Marlin
+
+### Process
+
+1. Open Marlin folder with all modifications done
+2. Wait until platformio has loaded the project
+3. Open Auto Build Marlin
+4. Click on Build `melzi_optiboot_optimized`
+5. Firmware can be directly uploded with USB cable (Bootloader must be present on your printer)
